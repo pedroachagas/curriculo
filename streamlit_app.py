@@ -8,7 +8,7 @@ with open("style.css") as f:
 #####################
 # Header 
 st.write('''
-# Pedro Andrietta Chagas
+# **Pedro Andrietta Chagas**
 ##### *Seja bem vindo ao meu portfólio de projetos!* 
 ''')
 
@@ -21,7 +21,7 @@ def round_image(image):
   draw = ImageDraw.Draw(lum_image)
   draw.pieslice([(0,0), (height,width)], 0, 360, 
                 fill = 255, outline = "white")
-  image_arr =np.array(image)[0:width-10,0:height-10]
+  image_arr =np.array(image)
   lum_image_arr =np.array(lum_image)
   final_image_arr = np.dstack((image_arr,lum_image_arr))
   return final_image_arr
@@ -43,7 +43,7 @@ st.info('''
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 st.markdown("""
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #cc4915;">
   <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Chanin Nantasenamat</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
