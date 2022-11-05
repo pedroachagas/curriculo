@@ -8,7 +8,7 @@ import streamlit as st
 from bokeh.models.widgets import Div
 
 st.set_page_config(
-    page_title="🚀 Portifólio do Pedro 🚀",
+    page_title="Portifólio do Pedro",
     page_icon=":robot_face:"
 )
 
@@ -140,10 +140,10 @@ with st.container():
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("images/rossmann_cover.png")
+        st.image(Image.open('images/rossmann_cover.png'))
         st.subheader("Rossmann Sales Prediction")
-        st.write("Previsão de vendas de rede farmacêutica.")
-        if st.button('Visitar projeto', key="ews_enter"):
+        st.write("Previsão de vendas de rede farmacêutica implementada como bot do Telegram")
+        if st.button('Testar bot!', key="ews_enter"):
             js = "window.open('https://github.com/pedroachagas')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
