@@ -26,6 +26,24 @@ def round_image(image):
   final_image_arr = np.dstack((image_arr,lum_image_arr))
   return final_image_arr
 
+@st.cache(allow_output_mutation=True)
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+@st.cache(allow_output_mutation=True)
+def get_img_with_href(local_img_path, target_url):
+    img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
+    bin_str = get_base64_of_bin_file(local_img_path)
+    html_code = f'''
+        <a href="{target_url}">
+            <img src="data:image/{img_format};base64,{bin_str}" />
+        </a>'''
+    return html_code
+
+
+
 image = round_image(image)
 
 st.image(image, width=150)
@@ -123,13 +141,16 @@ st.markdown('''
 ## Projetos
 ''')
 
-st.markdown("""
-        <a href="https://github.com/pedroachagas/rossmann_sales_forecasting">
-         <img alt="Qries" src="https://github.com/pedroachagas/curriculo/blob/7992a51cea3b79f1522b0250902046e1fcc752c6/images/rossmann_cover.png"
-         width=150" height="70">
-        </a>
-      
-      """, unsafe_allow_html=True)
+gif_html = get_img_with_href('/home/pedro/my_project_dir/curriculo/images/rossmann_cover.png', 'https://docs.streamlit.io')
+st.markdown(gif_html, unsafe_allow_html=True)
+
+#st.markdown("""
+#        <a href="https://github.com/pedroachagas/rossmann_sales_forecasting">
+#         <img alt="Qries" src="https://github.com/pedroachagas/curriculo/blob/7992a51cea3b79f1522b0250902046e1fcc752c6/images/rossmann_cover.png"
+#         width=150" height="70">
+#        </a>
+#      
+#      """, unsafe_allow_html=True)
 
 #####################
 st.markdown('''
