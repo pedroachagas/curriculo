@@ -123,7 +123,13 @@ st.markdown('''
 ## Projetos
 ''')
 
-st.markdown("""<a href="default.asp"><img src="https://github.com/pedroachagas/curriculo/blob/main/images/rossmann_cover.png" alt="HTML tutorial" style="width:100px;height:100px;"></a>""", unsafe_allow_html=True)
+st.markdown("""
+        <a href="https://github.com/pedroachagas/rossmann_sales_forecasting">
+         <img alt="Qries" src="https://github.com/pedroachagas/curriculo/blob/7992a51cea3b79f1522b0250902046e1fcc752c6/images/rossmann_cover.png"
+         width=150" height="70">
+        </a>
+      
+      """, unsafe_allow_html=True)
 
 #####################
 st.markdown('''
