@@ -140,14 +140,14 @@ with st.container():
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image(round_image(Image.open('images/rossmann_cover.png')))
+        st.image('rossmann_cover.png', width=150)
         st.subheader("Rossmann Sales Prediction")
         st.write("Previsão de vendas de rede farmacêutica implementada como bot do Telegram")
         if st.button('Testar bot!', key="ews_enter"):
-            js = "window.open('https://github.com/pedroachagas')"  # New tab or window
+            js = "window.open('http://t.me/RossmannSalesPredBot')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
-            st.write('Web Application opens in new browser tab')
+            st.write('A aplicação abrirá em outra página')
             st.bokeh_chart(div)
         if st.button('Github', key="ews_github"):
             st.write('Github opens in new browser tab')
