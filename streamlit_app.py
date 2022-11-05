@@ -2,6 +2,25 @@ import streamlit as st
 import numpy as np
 from PIL import Image,ImageDraw
 
+import requests
+import streamlit as st
+from streamlit_lottie import st_lottie
+from bokeh.models.widgets import Div
+
+
+st.set_page_config(
+    page_title="🚀 Portifólio do Pedro 🚀",
+    page_icon=":robot_face:",
+    layout="wide",
+)
+
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
@@ -137,20 +156,30 @@ st.markdown('''
 
 
 #####################
-st.markdown('''
-## Projetos
-''')
 
-gif_html = get_img_with_href('/home/pedro/my_project_dir/curriculo/images/rossmann_cover.png', 'https://docs.streamlit.io')
-st.markdown(gif_html, unsafe_allow_html=True)
 
-#st.markdown("""
-#        <a href="https://github.com/pedroachagas/rossmann_sales_forecasting">
-#         <img alt="Qries" src="https://github.com/pedroachagas/curriculo/blob/7992a51cea3b79f1522b0250902046e1fcc752c6/images/rossmann_cover.png"
-#         width=150" height="70">
-#        </a>
-#      
-#      """, unsafe_allow_html=True)
+with st.container():
+    st.markdown('''
+    ## Projetos
+    ''')
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.image("https://github.com/pedroachagas/curriculo/blob/7992a51cea3b79f1522b0250902046e1fcc752c6/images/rossmann_cover.png")
+        st.subheader("Rossmann Sales Prediction")
+        st.write("Previsão de vendas de rede farmacêutica.")
+        if st.button('Visitar projeto', key="ews_enter"):
+            js = "window.open('https://github.com/pedroachagas')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.write('Web Application opens in new browser tab')
+            st.bokeh_chart(div)
+        if st.button('Github', key="ews_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/pedroachagas/rossmann_sales_forecasting')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 #####################
 st.markdown('''
