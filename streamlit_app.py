@@ -44,6 +44,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #cc4915;">
+  <a class="navbar-brand" href="https://www.linkedin.com/in/pedroachagas/" target="_blank">Pedro Chagas</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -58,7 +59,6 @@ st.markdown("""
       <li class="nav-item">
         <a class="nav-link" href="#work-experience">Experiência profissional</a>
       </li>
-    
       <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
       </li>
@@ -104,6 +104,7 @@ st.markdown('''
 ## Educação
 ''')
 
+
 #####################
 st.markdown('''
 ## Experiência profissional
@@ -117,8 +118,8 @@ txt3('Programming', '`Python`, `R`, `Linux`')
 txt3('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
 txt3('Data visualization', '`matplotlib`, `seaborn`, `plotly`, `altair`, `ggplot2`')
 txt3('Machine Learning', '`scikit-learn`')
-txt3('Deep Learning', '`TensorFlow`','`Keras`')
-txt3('Web development', '`Flask`, `HTML`, `CSS`', 'Gunicorn')
+txt3('Deep Learning', '`TensorFlow`,`Keras`')
+txt3('Web development', '`Flask`, `HTML`, `CSS`, `Gunicorn`')
 txt3('Model deployment', '`streamlit`, `gradio`, `Heroku`, `AWS`, `Azure`')
 
 #####################
