@@ -9,7 +9,7 @@ with open("style.css") as f:
 # Header 
 st.write('''
 # **Pedro Andrietta Chagas**
-##### *Seja bem vindo ao meu portfólio de projetos!* 
+##### *Este portifólio em si é um projeto de webapp no Streamlit Cloud!* 
 ''')
 
 image = Image.open('profile.png')
@@ -57,7 +57,7 @@ st.markdown("""
         <a class="nav-link" href="#Educação">Educação</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#work-experience">Experiência profissional</a>
+        <a class="nav-link" href="#work-experience">Projetos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
@@ -104,11 +104,26 @@ st.markdown('''
 ## Educação
 ''')
 
+txt('**Universidade Federal do Rio de Janeiro**, Graduação em Engenharia de Produção',
+'2015-2022')
+st.markdown('''
+Trabalho de conclusão de curso voltado à aplicação de técnicas de Data Mining e algoritmos de Machine Learning na gestão da UFRJ, especialmente quanto a previsão de alunos em risco de evasão.
+''')
+
+txt('**Arts et Métiers ParisTech - École Nationale Supérieure dArts et Métiers**, Master of Engineering - MEng, Engenharia e Gestão Industrial',
+'2015-2022')
+st.markdown('''
+- Bolsista Honorário BRAFITEC: cobrimento completo dos custos dos 2 anos de intercâmbio em Paris, França
+- Especialização em Gestão Industrial 4.0: experiência com robôs colaborativos, IoT e gestão da inovação.
+''')
+
 
 #####################
 st.markdown('''
-## Experiência profissional
+## Projetos
 ''')
+
+st.markdown('<a href="default.asp"><img src="https://github.com/pedroachagas/curriculo/blob/main/images/rossmann_cover.png" alt="HTML tutorial" style="width:100px;height:100px;"></a>'
 
 #####################
 st.markdown('''
