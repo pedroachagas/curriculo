@@ -33,7 +33,7 @@ st.image(image, width=150)
 st.markdown('## Quem sou eu', unsafe_allow_html=True)
 st.info('''
 - Duplo-graduado em Engenheria de Produção pela UFRJ e pela ENSAM Paristech (Bolsista Honorário BRAFITEC) :mortar_board:
-- Apaixonado por Ciência de Dados e Machine Learning :robot:
+- Apaixonado por Ciência de Dados e Machine Learning :robot_face:
 - Em constante busca de conhecimento :brain:
 ''')
 
