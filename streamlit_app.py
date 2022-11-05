@@ -4,7 +4,6 @@ from PIL import Image,ImageDraw
 
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 from bokeh.models.widgets import Div
 
 
@@ -14,12 +13,6 @@ st.set_page_config(
     layout="wide",
 )
 
-
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
