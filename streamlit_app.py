@@ -2,10 +2,6 @@ import streamlit as st
 import numpy as np
 from PIL import Image,ImageDraw
 
-import requests
-import streamlit as st
-from bokeh.models.widgets import Div
-
 
 st.set_page_config(
     page_title="🚀 Portifólio do Pedro 🚀",
