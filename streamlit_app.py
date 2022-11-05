@@ -123,7 +123,7 @@ st.markdown('''
 ## Projetos
 ''')
 
-st.markdown('<a href="default.asp"><img src="https://github.com/pedroachagas/curriculo/blob/main/images/rossmann_cover.png" alt="HTML tutorial" style="width:100px;height:100px;"></a>')
+st.markdown("""<a href="default.asp"><img src="https://github.com/pedroachagas/curriculo/blob/main/images/rossmann_cover.png" alt="HTML tutorial" style="width:100px;height:100px;"></a>""", unsafe_allow_html=True)
 
 #####################
 st.markdown('''
