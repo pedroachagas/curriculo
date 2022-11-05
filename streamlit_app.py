@@ -156,38 +156,37 @@ with st.container():
             div = Div(text=html)
             st.bokeh_chart(div)
     with col2:
-        st.image('rossmann_cover.png', width=150)
-        st.subheader("Rossmann Sales Prediction")
-        st.write("Previsão de vendas de rede farmacêutica implementada como bot do Telegram")
-        if st.button('Testar bot!', key="ews_enter"):
-            js = "window.open('http://t.me/RossmannSalesPredBot')"  # New tab or window
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Github E-Mail Exposer")
+        st.write("Expose all E-Mail addresses contributing to a given Github account.")
+        if st.button('Enter App', key="gee_enter"):
+            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
-            st.write('A aplicação abrirá em outra página')
+            st.write('Web Application opens in new browser tab')
             st.bokeh_chart(div)
-        if st.button('Github', key="ews_github"):
+        if st.button('Github', key="gee_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/pedroachagas/rossmann_sales_forecasting')"  # New tab or window
+            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
     with col3:
-        st.image('rossmann_cover.png', width=150)
-        st.subheader("Rossmann Sales Prediction")
-        st.write("Previsão de vendas de rede farmacêutica implementada como bot do Telegram")
-        if st.button('Testar bot!', key="ews_enter"):
-            js = "window.open('http://t.me/RossmannSalesPredBot')"  # New tab or window
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Crypto Currency Watchlist")
+        st.write("Django web application that shows some basic data of your favourite crypto currencies.")
+        if st.button('Enter App', key="ccw_enter"):
+            js = "window.open('https://crypto-watchlist-rather-to.herokuapp.com/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
-            st.write('A aplicação abrirá em outra página')
+            st.write('Web Application opens in new browser tab')
             st.bokeh_chart(div)
-        if st.button('Github', key="ews_github"):
+        if st.button('Github', key="ccw_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/pedroachagas/rossmann_sales_forecasting')"  # New tab or window
+            js = "window.open('https://github.com/ratherUsefulCode/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
-
 
 #####################
 st.markdown('''
