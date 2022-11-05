@@ -116,13 +116,13 @@ st.markdown('''
 ## Educação
 ''')
 
-txt('**Universidade Federal do Rio de Janeiro**, Graduação em Engenharia de Produção',
+txt('**Universidade Federal do Rio de Janeiro**\nGraduação em Engenharia de Produção',
 '2015-2022')
 st.markdown('''
 Trabalho de conclusão de curso voltado à aplicação de técnicas de Data Mining e algoritmos de Machine Learning na gestão da UFRJ, especialmente quanto a previsão de alunos em risco de evasão.
 ''')
 
-txt('**Arts et Métiers ParisTech - École Nationale Supérieure dArts et Métiers**, Master of Engineering - MEng, Engenharia e Gestão Industrial',
+txt('**Arts et Métiers ParisTech - École Nationale Supérieure dArts et Métiers**\n Master of Engineering - MEng, Engenharia e Gestão Industrial',
 '2015-2022')
 st.markdown('''
 - Bolsista Honorário BRAFITEC: cobrimento completo dos custos dos 2 anos de intercâmbio em Paris, França
