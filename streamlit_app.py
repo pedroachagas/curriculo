@@ -155,6 +155,39 @@ with st.container():
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
+    with col2:
+        st.image('rossmann_cover.png', width=150)
+        st.subheader("Rossmann Sales Prediction")
+        st.write("Previsão de vendas de rede farmacêutica implementada como bot do Telegram")
+        if st.button('Testar bot!', key="ews_enter"):
+            js = "window.open('http://t.me/RossmannSalesPredBot')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.write('A aplicação abrirá em outra página')
+            st.bokeh_chart(div)
+        if st.button('Github', key="ews_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/pedroachagas/rossmann_sales_forecasting')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+    with col3:
+        st.image('rossmann_cover.png', width=150)
+        st.subheader("Rossmann Sales Prediction")
+        st.write("Previsão de vendas de rede farmacêutica implementada como bot do Telegram")
+        if st.button('Testar bot!', key="ews_enter"):
+            js = "window.open('http://t.me/RossmannSalesPredBot')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.write('A aplicação abrirá em outra página')
+            st.bokeh_chart(div)
+        if st.button('Github', key="ews_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/pedroachagas/rossmann_sales_forecasting')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+
 
 #####################
 st.markdown('''
