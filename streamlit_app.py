@@ -9,8 +9,7 @@ from bokeh.models.widgets import Div
 
 st.set_page_config(
     page_title="🚀 Portifólio do Pedro 🚀",
-    page_icon=":robot_face:",
-    layout="wide",
+    page_icon=":robot_face:"
 )
 
 
@@ -141,7 +140,7 @@ with st.container():
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("https://github.com/pedroachagas/curriculo/blob/7992a51cea3b79f1522b0250902046e1fcc752c6/images/rossmann_cover.png")
+        st.image("images/rossmann_cover.png")
         st.subheader("Rossmann Sales Prediction")
         st.write("Previsão de vendas de rede farmacêutica.")
         if st.button('Visitar projeto', key="ews_enter"):
